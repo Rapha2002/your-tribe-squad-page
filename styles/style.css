@@ -1,0 +1,11 @@
+html {
+    height: 100vh;
+    background-color: black;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 3fr 1fr;
+}
