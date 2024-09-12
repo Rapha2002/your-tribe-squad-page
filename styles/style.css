@@ -17,8 +17,9 @@ html {
 
 body{
     position: relative;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    letter-spacing: 1px;
     font-style: normal;
     margin: 0px;
     color: var(--secondary);
