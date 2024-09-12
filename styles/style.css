@@ -66,12 +66,17 @@ section.squad{
         background-color: var(--light);
         padding: 16px;
 	    transition: all 0.25s ease;
+        overflow: hidden;
 
         /* width: 480px; */
 
         &:hover{
             background-color: var(--secondary);
             color: var(--white);
+
+            h4{
+                transform: translatex(0%);
+            }
 
         }
 
@@ -85,8 +90,8 @@ section.squad{
             grid-area: sub-title;
             width: 100%;
             margin-top: auto;
-            /* transform: ; */
-
+	        transition: all 0.25s ease;
+            transform: translatex(-60%);
         }
 
         img{
