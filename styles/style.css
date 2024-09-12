@@ -73,6 +73,10 @@ section.squad{
             background-color: var(--secondary);
             color: var(--white);
 
+            img{
+                width: 280px;
+            }
+
         }
 
 
@@ -98,3 +102,6 @@ section.squad{
         }
     }
 }
+
+
+/* Amstel campus pagina */
