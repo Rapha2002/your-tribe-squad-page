@@ -13,6 +13,8 @@ html {
     height: 100vh;
     background-color: var(--background);
     cursor: url("/assets/cursor.png"), default;
+    background-color: var(--white);
+    cursor: url(), no-drop;
 }
 
 body{
