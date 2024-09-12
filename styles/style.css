@@ -4,13 +4,14 @@
 
     --primary: #AD3E39; 
     --secondary: #0D1617;
-    --white: #b3b2ae; 
+    --background: #b3b2ae; 
+    --white: #e9e9e6;
     --light: #c1c1bd;
 }
 
 html {
     height: 100vh;
-    background-color: var(--white);
+    background-color: var(--background);
     cursor: url("/assets/cursor.png"), default;
 }
 
@@ -31,7 +32,7 @@ header {
     padding: 3em;
     width: 100%;
     box-sizing: border-box;
-    border-bottom: solid 1px var(--secondary);
+    /* border-bottom: solid 1px var(--secondary); */
     box-shadow: 0px 8px 16px 0 rgba(21, 21, 21, .16);
     background-color: var(--primary);
 
@@ -55,6 +56,7 @@ section.squad{
     grid-template-columns: 1fr 1fr;
     gap: 64px;
     padding: 0px 128px;
+    padding-bottom: 128px;
 
     article{
         display: grid;
@@ -63,7 +65,16 @@ section.squad{
         "sub-title image";
         background-color: var(--light);
         padding: 16px;
+	    transition: all 0.25s ease;
+
         /* width: 480px; */
+
+        &:hover{
+            background-color: var(--secondary);
+            color: var(--white);
+
+        }
+
 
         h3{
             grid-area: title;
