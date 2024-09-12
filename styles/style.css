@@ -17,7 +17,6 @@ body{
     position: relative;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     margin: 0px;
     color: var(--secondary);
