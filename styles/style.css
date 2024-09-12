@@ -52,33 +52,56 @@ section.hero{
 section.squad{
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr;
     gap: 64px;
-    padding: 0px 128px;
+    padding: 0px 64px;
     padding-bottom: 128px;
+
+    @media only screen and (min-width: 640PX) {
+        padding: 0px 128px;
+	}
+
+    @media only screen and (min-width: 1080px) {
+        grid-template-rows: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
+	}
+
+    @media only screen and (min-width: 1920px) {
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
+	}
 
     article{
         display: grid;
         grid-template-areas: 
         "title title"
-        "sub-title image";
+        "sub-title sub-title"
+        "image imge";
         background-color: var(--light);
         padding: 16px;
 	    transition: all 0.25s ease;
         overflow: hidden;
+        border-radius: 8px;
+
+        @media only screen and (min-width: 640px) {
+            grid-template-areas: 
+            "title title"
+            "sub-title image";
+
+            &:hover{
+                background-color: var(--secondary);
+                color: var(--white);
+    
+                h4{
+                    transform: translatex(0%);
+                }
+    
+            }
+        }
 
         /* width: 480px; */
 
-        &:hover{
-            background-color: var(--secondary);
-            color: var(--white);
-
-            h4{
-                transform: translatex(0%);
-            }
-
-        }
 
 
         h3{
