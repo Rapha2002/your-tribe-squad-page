@@ -66,6 +66,7 @@ section.squad{
         background-color: var(--light);
         padding: 16px;
 	    transition: all 0.25s ease;
+        overflow: hidden;
 
         /* width: 480px; */
 
@@ -73,8 +74,8 @@ section.squad{
             background-color: var(--secondary);
             color: var(--white);
 
-            img{
-                width: 280px;
+            h4{
+                transform: translatex(0%);
             }
 
         }
@@ -89,6 +90,8 @@ section.squad{
             grid-area: sub-title;
             width: 100%;
             margin-top: auto;
+	        transition: all 0.25s ease;
+            transform: translatex(-60%);
         }
 
         img{
