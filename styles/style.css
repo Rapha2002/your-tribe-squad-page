@@ -63,6 +63,12 @@ header {
     font-style: normal;
     margin: auto;
     background-color: var(--yellow) ;
+    transition: all 0.25s ease;
+        
+        &:hover{
+        background-color: var(--blue);
+        scale: 1.2;
+        }
 
 }
 
