@@ -39,7 +39,23 @@ header {
 
     h2{
         text-align: center;
+        font-style: italic;
     }
+}
+
+.BAZINGA {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.BT {
+    cursor: url('https://raw.githubusercontent.com/ArmanVD/your-tribe-profile-card/main/comic-pointer.png'), auto;
+    border-radius: 8px;
+}
+
+article{
+    cursor: url('https://raw.githubusercontent.com/ArmanVD/your-tribe-profile-card/main/comic-pointer.png'), auto;
 }
 
 section.hero{
