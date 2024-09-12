@@ -1,6 +1,23 @@
+/* variables */
+
+:root {
+
+    --primary: #AD3E39; 
+    --secondary: #0D1617;
+    --white: #b3b2ae; 
+    --light: #c1c1bd;
+}
+
 html {
     height: 100vh;
-    background-color: black;
+    background-color: var(--white);
+}
+
+body{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    color: var(--secondary);
 }
 
 header {
@@ -8,4 +25,58 @@ header {
     align-items: center;
     justify-content: space-evenly;
     grid-template-columns: 1fr 3fr 1fr;
+    padding: 3em;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--secondary);
+    box-shadow: 0px 8px 16px 0 rgba(21, 21, 21, .16);
+    background-color: var(--primary);
+
+    h2{
+        text-align: center;
+    }
+}
+
+section.hero{
+
+    .text-container{
+        text-align: center;
+        padding: 4em 8em;
+    }
+}
+
+section.squad{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    padding: 0px 128px;
+
+    article{
+        display: grid;
+        grid-template-areas: 
+        "title title"
+        "sub-title image";
+        background-color: var(--light);
+        padding: 16px;
+        /* width: 480px; */
+
+        h3{
+            grid-area: title;
+        }
+
+        h4{
+            grid-area: sub-title;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        img{
+            grid-area: image;
+            width: 200px;
+            margin-left: auto;
+            padding: 8px;
+        }
+    }
 }
