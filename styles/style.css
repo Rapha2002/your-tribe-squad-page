@@ -11,7 +11,7 @@
 html {
     height: 100vh;
     background-color: var(--white);
-    cursor: url(/assets/Cursor-Pointer.png), auto;
+    cursor: url(/assets/cursor.png), auto;
 }
 
 body{
