@@ -2,11 +2,12 @@
 
 :root {
 
-    --primary: #AD3E39; 
+    --primary: #ee5454; 
     --secondary: #0D1617;
     --background: #b3b2ae; 
     --white: #e9e9e6;
     --light: #c1c1bd;
+    --yellow: #f6db35;
 }
 
 html {
@@ -47,6 +48,7 @@ header {
     width: 75%;
     height: auto;
     border-radius: 8px;
+    margin: auto;
 }
 
 .BT {
@@ -58,6 +60,8 @@ header {
     font-weight: 400;
     letter-spacing: 1px;
     font-style: normal;
+    margin: auto;
+    background-color: var(--yellow) ;
 
 }
 
@@ -155,3 +159,8 @@ section.squad{
 
 
 /* Amstel campus pagina */
+img.WC_Head {
+    width: 1096px;
+    height: 686px;
+    object-fit: fill;
+}
