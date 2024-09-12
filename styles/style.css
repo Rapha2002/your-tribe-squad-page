@@ -27,23 +27,7 @@ body{
     color: var(--secondary);
 }
 
-header {
-    display: grid;
-    align-items: center;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 3fr 1fr;
-    padding: 3em;
-    width: 100%;
-    box-sizing: border-box;
-    /* border-bottom: solid 1px var(--secondary); */
-    box-shadow: 0px 8px 16px 0 rgba(21, 21, 21, .16);
-    background-color: var(--primary);
-
-    h2{
-        text-align: center;
-        font-style: italic;
-    }
-}
+/* Cursor */
 
 .BAZINGA {
     width: 75%;
@@ -76,6 +60,28 @@ article{
     cursor: url('https://raw.githubusercontent.com/ArmanVD/your-tribe-profile-card/main/comic-pointer.png'), auto;
 }
 
+/* Header */
+
+header {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 3em;
+    width: 100%;
+    box-sizing: border-box;
+    /* border-bottom: solid 1px var(--secondary); */
+    box-shadow: 0px 8px 16px 0 rgba(21, 21, 21, .16);
+    background-color: var(--primary);
+
+    h2{
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+/* Hero */
+
 section.hero{
 
     .text-container{
@@ -84,6 +90,8 @@ section.hero{
     }
 }
 
+/* Squad page  */
+
 section.squad{
 
     display: grid;
@@ -91,7 +99,7 @@ section.squad{
     grid-template-columns: 1fr;
     gap: 64px;
     padding: 0px 64px;
-    padding-bottom: 128px;
+    padding-bottom: 128px !important;
 
     @media only screen and (min-width: 640PX) {
         padding: 0px 128px;
@@ -136,9 +144,20 @@ section.squad{
             }
         }
 
-        /* width: 480px; */
-
-
+        /* &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 64px;
+            height: 64px;
+            mask-image: url('../assets/boom_14697262.svg');
+            mask-size: 64px;
+            mask-position: center;
+            mask-repeat: no-repeat;
+            background: var(--secondary);
+        } */
 
         h3{
             grid-area: title;
