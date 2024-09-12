@@ -12,8 +12,7 @@
 html {
     height: 100vh;
     background-color: var(--background);
-    cursor: url("/assets/cursor.png"), default;
-    cursor: url(), no-drop;
+    cursor: url(/assets/paw.svg), no-drop;
 }
 
 body{
