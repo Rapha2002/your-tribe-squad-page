@@ -118,11 +118,12 @@ section.squad{
             "sub-title image";
 
             &:hover{
-                background-color: var(--secondary);
-                color: var(--white);
+                background-color: var(--primary);
+                color: var(--yellow);
     
                 h4{
                     transform: translatex(0%);
+                    color: var(--yellow);
                 }
     
             }
@@ -143,6 +144,7 @@ section.squad{
             margin-top: auto;
 	        transition: all 0.25s ease;
             transform: translatex(-100%);
+            color: var(--primary);
         }
 
         img{
