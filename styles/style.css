@@ -30,7 +30,6 @@ body{
 /* Cursor */
 
 .BAZINGA {
-    width: 75%;
     height: auto;
     border-radius: 8px;
     margin: auto;
@@ -56,7 +55,7 @@ body{
         }
 
         a{  color: var(--secondary);
-            font-size: x-large;
+            /* font-size: x-large; */
             text-decoration: none;
             cursor: url('https://raw.githubusercontent.com/ArmanVD/your-tribe-profile-card/main/comic-pointer.png'), auto;
         }
@@ -73,8 +72,8 @@ header {
     display: grid;
     align-items: center;
     justify-content: space-evenly;
-    grid-template-columns: 1fr 3fr 1fr;
-    padding: 3em;
+    grid-template-columns: 2fr 1fr;
+    padding: 1em;
     width: 100%;
     box-sizing: border-box;
     border-radius: 0px 0px 40px 40px;
@@ -86,10 +85,42 @@ header {
     background-color: var(--primary);
 
     h2{
-        font-size: xx-large;
-        text-align: center;
-        font-style: italic;
+        display: none;
     }
+
+    .BT{
+        /* display: none; */
+        font-size: small;
+    }
+
+    .BAZINGA{
+        width: 128px;
+    }
+
+    @media only screen and (min-width: 640PX) {
+
+        grid-template-columns: 1fr 3fr 1fr !important;
+
+        h2{
+            display: block;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .BT{
+            a{
+                font-size: x-large;
+            }
+        }
+
+        .BAZINGA{
+            width: 75%;
+        }
+	}
+
+    @media only screen and (min-width: 1080px) {
+	}
+
 }
 
 /* Hero */
