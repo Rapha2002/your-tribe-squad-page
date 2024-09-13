@@ -58,6 +58,7 @@ body{
         a{  color: var(--secondary);
             font-size: x-large;
             text-decoration: none;
+            cursor: url('https://raw.githubusercontent.com/ArmanVD/your-tribe-profile-card/main/comic-pointer.png'), auto;
         }
 
 }
