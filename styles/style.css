@@ -54,6 +54,11 @@ body{
         scale: 1.2;
         }
 
+        a{
+            font-size: x-large;
+            text-decoration: none;
+        }
+
 }
 
 article{
@@ -75,6 +80,7 @@ header {
     background-color: var(--primary);
 
     h2{
+        font-size: xx-large;
         text-align: center;
         font-style: italic;
     }
