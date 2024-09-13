@@ -161,6 +161,7 @@ section.squad{
 	}
 
     article{
+        position: relative;
         display: grid;
         grid-template-areas: 
         "title title"
