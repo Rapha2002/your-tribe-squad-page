@@ -164,7 +164,7 @@ section.squad{
         "title title"
         "sub-title sub-title"
         "image imge";
-        background-color: var(--yellow);
+        background-color: var(--light);
         padding: 16px;
 	    transition: all 0.25s ease;
         overflow: hidden;
