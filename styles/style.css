@@ -159,6 +159,7 @@ section.squad{
 	}
 
     article{
+        position: relative;
         display: grid;
         grid-template-areas: 
         "title title"
@@ -187,7 +188,7 @@ section.squad{
             }
         }
 
-        /* &::after {
+        &::after {
             content: '';
             position: absolute;
             top: 0;
@@ -200,7 +201,7 @@ section.squad{
             mask-position: center;
             mask-repeat: no-repeat;
             background: var(--secondary);
-        } */
+        }
 
         h3{
             grid-area: title;
