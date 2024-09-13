@@ -46,6 +46,7 @@ body{
     letter-spacing: 1px;
     font-style: normal;
     margin: auto;
+    border: solid 3px var(--secondary);
     background-color: var(--yellow) ;
     transition: all 0.25s ease;
         
@@ -54,8 +55,8 @@ body{
         scale: 1.2;
         }
 
-        a{
-            font-size: x-large;
+        a{  color: var(--secondary);
+            font-size: xx-large;
             text-decoration: none;
         }
 
