@@ -232,8 +232,14 @@ section.squad{
 
 
 /* Amstel campus pagina */
-img.WC_Head {
-    width: 1096px;
-    height: 686px;
-    object-fit: fill;
-}
+ .wrapper { 
+    
+    
+
+ }
+ .wrapper img{
+    max-height:1000px;
+    max-width: 500px;
+    object-fit: contain;
+ }
+ 
