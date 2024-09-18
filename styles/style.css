@@ -69,7 +69,7 @@ article{
 
 /* Header */
 
-header {
+.header {
     display: grid;
     align-items: center;
     justify-content: space-evenly;
@@ -85,6 +85,7 @@ header {
     /* border-bottom: solid 1px var(--secondary); */
     box-shadow: 0px 8px 16px 0 rgba(21, 21, 21, .16);
     background-color: var(--primary);
+    transition: all 0.5s ease;
 
     h2{
         display: none;
@@ -98,6 +99,17 @@ header {
     .BAZINGA{
         width: 128px;
     }
+
+    &.scrolled{
+
+        opacity: 0;
+        top: -128px;
+      }
+    
+      &.active{
+        top: 0;
+        opacity: 1;
+      }
 
     @media only screen and (min-width: 640PX) {
 
@@ -199,22 +211,13 @@ section.squad{
         h3{
             grid-area: title;
             font-size: x-large;
-        }
-
-        h4{
             position: relative;
-            grid-area: sub-title;
-            width: 100%;
-            margin-top: auto;
-	        transition: all 0.25s ease;
-            transform: translatex(-100%);
-            color: var(--primary);
 
             /* &::after {
                 content: '';
                 position: absolute;
                 right: 0;
-                bottom: 0;
+                top: 0;
                 width: 48px;
                 height: 48px;
                 mask-image: url('../assets/boom_14697262.svg');
@@ -223,6 +226,16 @@ section.squad{
                 mask-repeat: no-repeat;
                 background: var(--yellow);
             } */
+        }
+
+        h4{
+            grid-area: sub-title;
+            width: 100%;
+            margin-top: auto;
+	        transition: all 0.25s ease;
+            transform: translatex(-100%);
+            color: var(--primary);
+
     
         }
 
