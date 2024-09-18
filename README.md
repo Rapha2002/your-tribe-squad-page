@@ -13,13 +13,15 @@ This project is licensed under the terms of the [MIT license](./LICENSE).
 
 BAZINGA leesmij
 
-Wij hebben een squadpage gemaakt met als thema: Sheldon Cooper (BAZINGA) van de serie The Big Bang Theory! Wij kozen hiervoor om het lekker luchtig the houden. Ook hebben wij 
+Wij hebben een squadpage gemaakt met als thema: Sheldon Cooper (BAZINGA) van de serie The Big Bang Theory! Wij kozen hiervoor onze page lekker luchtig en spannend te houden.
 
 
-Onze pages is verdeeld over 2 verschillende pagina's: de visitekaartjes van de squad en de campus pagina met informatie over de campus. Deze pagina's zijn te bereiken via de gele button in de header.
+Onze page is verdeeld over 2 verschillende pagina's: de visitekaartjes van de squad en de campuspagina met informatie over de campus. Deze pagina's zijn te bereiken via de gele button in de header.
 
-We hebben een aantal felle kleuren en een speelse font gebruikt om een beetje in de comic style te blijven.
+We hebben een aantal felle kleuren en een speelse font gebruikt om een beetje in de comic style te blijven. De header (die redelijk groot is) verdwijnt automatisch bij het scrollen, zodat hij niet in de weg zit. Als de gebruiker weer helemaal naar boven scrollt, verschijnt deze weer.
 
+Onze page is responsive en is gebaseerd op mobile first design. Hiervoor hebben we een media query gebruikt. De kaartjes zijn op mobiel één opvolgende lijst en op desktop/widescreen zijn er maximaal 3 kaartjes naast elkaar.
 
+Onze persoonlijke visitekaartjes zijn bereikbaar via een button op onze kaartjes op de squadpage. Hier is meer informatie te vinden over onze teamleden: Arman, Daan, Sjors en Rapha.
 
 
