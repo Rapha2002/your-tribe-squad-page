@@ -267,14 +267,14 @@ section.squad {
 
 /* Amstel campus pagina */
 .wrapper img {
-    aspect-ratio: 1/1;
+
     object-fit: cover;
     width: 90%;
     height: 20%;
 
 
     @media only screen and (min-width: 600px) {
-        aspect-ratio: 1/1;
+
         object-fit: cover;
         width: 90%;
         height: 50%;
