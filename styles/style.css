@@ -130,8 +130,14 @@ section.hero{
 
     .text-container{
         text-align: center;
-        padding: 4em 8em;
+        padding: 64px 32px;
+        
+        @media only screen and (min-width: 640PX) {
+            padding: 64px 128px;
+        }
     }
+
+
 }
 
 /* Squad page  */
@@ -142,7 +148,7 @@ section.squad{
     grid-template-rows: 1fr ;
     grid-template-columns: 1fr;
     gap: 64px;
-    padding: 0px 64px;
+    padding: 0px 32px;
     padding-bottom: 128px !important;
 
     @media only screen and (min-width: 640PX) {
@@ -160,7 +166,7 @@ section.squad{
 	}
 
     article{
-        position: relative;
+        /* position: relative; */
         display: grid;
         grid-template-areas: 
         "title title"
@@ -189,33 +195,34 @@ section.squad{
             }
         }
 
-        /* &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 64px;
-            height: 64px;
-            mask-image: url('../assets/boom_14697262.svg');
-            mask-size: 64px;
-            mask-position: center;
-            mask-repeat: no-repeat;
-            background: var(--secondary);
-        } */
-
         h3{
             grid-area: title;
             font-size: x-large;
         }
 
         h4{
+            position: relative;
             grid-area: sub-title;
             width: 100%;
             margin-top: auto;
 	        transition: all 0.25s ease;
             transform: translatex(-100%);
             color: var(--primary);
+
+            /* &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 48px;
+                height: 48px;
+                mask-image: url('../assets/boom_14697262.svg');
+                mask-size: 48px;
+                mask-position: center;
+                mask-repeat: no-repeat;
+                background: var(--yellow);
+            } */
+    
         }
 
         img{
