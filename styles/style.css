@@ -2,9 +2,9 @@
 
 :root {
 
-    --primary: #ee5454; 
+    --primary: #ee5454;
     --secondary: #0D1617;
-    --background: #b3b2ae; 
+    --background: #b3b2ae;
     --white: #e9e9e6;
     --light: #c1c1bd;
     --yellow: #f6db35;
@@ -18,7 +18,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     position: relative;
     font-family: "Bangers", system-ui;
     font-weight: 400;
@@ -47,23 +47,24 @@ body{
     font-style: normal;
     margin: auto;
     border: solid 3px var(--secondary);
-    background-color: var(--yellow) ;
+    background-color: var(--yellow);
     transition: all 0.25s ease;
-        
-        &:hover{
+
+    &:hover {
         background-color: var(--blue);
         scale: 1.2;
-        }
+    }
 
-        a{  color: var(--secondary);
-            /* font-size: x-large; */
-            text-decoration: none;
-            cursor: url('https://raw.githubusercontent.com/ArmanVD/your-tribe-profile-card/main/comic-pointer.png'), auto;
-        }
+    a {
+        color: var(--secondary);
+        /* font-size: x-large; */
+        text-decoration: none;
+        cursor: url('https://raw.githubusercontent.com/ArmanVD/your-tribe-profile-card/main/comic-pointer.png'), auto;
+    }
 
 }
 
-article{
+article {
     cursor: url('https://raw.githubusercontent.com/ArmanVD/your-tribe-profile-card/main/comic-pointer.png'), auto;
 }
 
@@ -87,16 +88,16 @@ article{
     background-color: var(--primary);
     transition: all 0.5s ease;
 
-    h2{
+    h2 {
         display: none;
     }
 
-    .BT{
+    .BT {
         /* display: none; */
         font-size: small;
     }
 
-    .BAZINGA{
+    .BAZINGA {
         width: 128px;
     }
 
@@ -115,50 +116,55 @@ article{
 
         grid-template-columns: 1fr 3fr 1fr !important;
 
-        h2{
+        h2 {
             display: block;
             font-size: xx-large;
             text-align: center;
         }
 
-        .BT{
-            a{
+        .BT {
+            a {
                 font-size: x-large;
             }
         }
 
-        .BAZINGA{
+        .BAZINGA {
             width: 75%;
         }
-	}
+    }
 
-    @media only screen and (min-width: 1080px) {
-	}
+    @media only screen and (min-width: 1080px) {}
 
 }
 
 /* Hero */
 
-section.hero{
-padding-top: 128px;
-    .text-container{
-        text-align: center;
-        padding: 64px 32px;
-        
-        @media only screen and (min-width: 640PX) {
-            padding: 128px 128px;
+section.hero {
+    padding-top: 128px;
+
+    @media only screen and (max-width: 600px) {
+        .text-container {
+            text-align: center;
+            padding: 1em
         }
     }
 
+    @media only screen and (min-width: 600px) {
+        .text-container {
+            text-align: center;
+            padding: 64px 128px;
 
+        }
+
+    }
 }
 
 /* Squad page  */
 
-section.squad{
+section.squad {
 
     display: grid;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     gap: 64px;
     padding: 0px 32px;
@@ -166,52 +172,60 @@ section.squad{
 
     @media only screen and (min-width: 640PX) {
         padding: 0px 128px;
-	}
+    }
 
     @media only screen and (min-width: 1080px) {
-        grid-template-rows: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-	}
+    }
 
     @media only screen and (min-width: 1920px) {
-        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-	}
+    }
 
-    article{
-        /* position: relative; */
+    article {
+        position: relative;
         display: grid;
-        grid-template-areas: 
-        "title title"
-        "sub-title sub-title"
-        "image imge";
+        grid-template-areas:
+            "title title"
+            "sub-title sub-title"
+            "image imge";
         background-color: var(--light);
         padding: 16px;
-	    transition: all 0.25s ease;
+        transition: all 0.25s ease;
         overflow: hidden;
         border-radius: 8px;
 
         @media only screen and (min-width: 640px) {
-            grid-template-areas: 
-            "title image"
-            "sub-title image";
+            grid-template-areas:
+                "title image"
+                "sub-title image";
 
-            &:hover{
+            &:hover {
                 background-color: var(--primary);
                 color: var(--yellow);
-    
-                h4{
+
+                h4 {
                     transform: translatex(0%);
                     color: var(--yellow);
                 }
-    
+
             }
         }
 
-        h3{
+        h3 {
             grid-area: title;
             font-size: x-large;
-            position: relative;
+        }
+
+        h4 {
+            grid-area: sub-title;
+            width: 100%;
+            margin-top: auto;
+            transition: all 0.25s ease;
+            transform: translatex(-100%);
+            color: var(--primary);
 
             /* &::after {
                 content: '';
@@ -239,7 +253,7 @@ section.squad{
     
         }
 
-        img{
+        img {
             grid-area: image;
             max-width: 240px;
             margin-left: auto;
@@ -252,15 +266,19 @@ section.squad{
 
 
 /* Amstel campus pagina */
- .wrapper { 
-    
-    
-
- }
- .wrapper img{
+.wrapper img {
     aspect-ratio: 1/1;
     object-fit: cover;
-    width: 100%;
-    height: 33%;
- }
- 
+    width: 90%;
+    height: 20%;
+
+
+    @media only screen and (min-width: 600px) {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        width: 90%;
+        height: 50%;
+
+    }
+
+}
